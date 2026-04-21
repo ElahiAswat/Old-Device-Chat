@@ -52,11 +52,11 @@
 async function send() {
   const prompt = document.getElementById("input").value;
 
-  const res = await fetch("YOUR_WORKER_URL", {
+  const res = await fetch("https://silent-rain-c8c8.asuhi-elaat.workers.dev/", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      password: "your-password",
+      password: "oldllm",
       prompt: prompt
     })
   });
